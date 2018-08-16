@@ -23,8 +23,9 @@
     self.title = @"Main";
     
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
-    _button.frame = CGRectMake(100, 100, 100, 100);
-    _button.backgroundColor = [UIColor redColor];
+    _button.frame = CGRectMake(100, 100, 100, 50);
+    [_button setTitle:@"开始请求" forState:UIControlStateNormal];
+    _button.backgroundColor = [UIColor lightGrayColor];
     [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
     
@@ -34,8 +35,9 @@
     [[NetWorkManager sharedNetWorkManager] getTestDataSuccess:^(id resultDic) {
      
 //        NSLog(@"------%@",resultDic);
-        self->_button.backgroundColor = [UIColor blueColor];
+        [self->_button setTitle:@"success" forState:UIControlStateNormal];
     } failure:^(NSError *error) {
+        [self->_button setTitle:@"error" forState:UIControlStateNormal];
         NSLog(@"------error%@",error);
     }];
 }
