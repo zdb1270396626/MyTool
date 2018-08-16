@@ -7,18 +7,38 @@
 //
 
 #import "MainViewController.h"
+#import "NetWorkManager.h"
 
 @interface MainViewController ()
 
+@property (nonatomic,strong)UIButton    *button;
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.title = @"Main";
+    
+    _button = [UIButton buttonWithType:UIButtonTypeCustom];
+    _button.frame = CGRectMake(100, 100, 100, 100);
+    _button.backgroundColor = [UIColor redColor];
+    [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_button];
+    
 }
-
+- (void)click:(UIButton *)button {
+    
+    [[NetWorkManager sharedNetWorkManager] getTestDataSuccess:^(id resultDic) {
+     
+//        NSLog(@"------%@",resultDic);
+        self->_button.backgroundColor = [UIColor blueColor];
+    } failure:^(NSError *error) {
+        NSLog(@"------error%@",error);
+    }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9554767271F8D418865372A9 /* libPods-MyTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */; };
 		E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */; };
-		E28A73FF2122D6AE00BD8BB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A73FE2122D6AE00BD8BB8 /* ViewController.m */; };
 		E28A74022122D6AE00BD8BB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A74002122D6AE00BD8BB8 /* Main.storyboard */; };
 		E28A74042122D6AF00BD8BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28A74032122D6AF00BD8BB8 /* Assets.xcassets */; };
 		E28A74072122D6AF00BD8BB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A74052122D6AF00BD8BB8 /* LaunchScreen.storyboard */; };
 		E28A740A2122D6AF00BD8BB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A74092122D6AF00BD8BB8 /* main.m */; };
 		E28A74142122D6B000BD8BB8 /* MyToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A74132122D6B000BD8BB8 /* MyToolTests.m */; };
 		E28A741F2122D6B000BD8BB8 /* MyToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A741E2122D6B000BD8BB8 /* MyToolUITests.m */; };
+		E28A742E2122D85200BD8BB8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A742D2122D85200BD8BB8 /* MainViewController.m */; };
+		E28A74332122D9F900BD8BB8 /* DBSaveManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A74322122D9F900BD8BB8 /* DBSaveManage.m */; };
+		E28A744921240DD800BD8BB8 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A744821240DD800BD8BB8 /* BaseNetworking.m */; };
+		E28A745021241BC300BD8BB8 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A744F21241BC300BD8BB8 /* NetWorkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTool/Pods-MyTool.debug.xcconfig"; sourceTree = "<group>"; };
+		BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A73F72122D6AE00BD8BB8 /* MyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E28A73FD2122D6AE00BD8BB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E28A73FE2122D6AE00BD8BB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E28A74012122D6AE00BD8BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E28A74032122D6AF00BD8BB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E28A74062122D6AF00BD8BB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,17 @@
 		E28A741A2122D6B000BD8BB8 /* MyToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A741E2122D6B000BD8BB8 /* MyToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyToolUITests.m; sourceTree = "<group>"; };
 		E28A74202122D6B000BD8BB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28A742C2122D85200BD8BB8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E28A742D2122D85200BD8BB8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E28A74312122D9F900BD8BB8 /* DBSaveManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSaveManage.h; sourceTree = "<group>"; };
+		E28A74322122D9F900BD8BB8 /* DBSaveManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBSaveManage.m; sourceTree = "<group>"; };
+		E28A744421240C2100BD8BB8 /* DBNetApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBNetApi.h; sourceTree = "<group>"; };
+		E28A744721240DD800BD8BB8 /* BaseNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
+		E28A744821240DD800BD8BB8 /* BaseNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
+		E28A744A2124143D00BD8BB8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E28A744E21241BC300BD8BB8 /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		E28A744F21241BC300BD8BB8 /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		FA18048DCCCD58538791F846 /* Pods-MyTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTool/Pods-MyTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9554767271F8D418865372A9 /* libPods-MyTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21CF2BBE562351842D184E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD747F5E43B3A048EBD83450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */,
+				FA18048DCCCD58538791F846 /* Pods-MyTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E28A73EE2122D6AE00BD8BB8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +118,8 @@
 				E28A74122122D6B000BD8BB8 /* MyToolTests */,
 				E28A741D2122D6B000BD8BB8 /* MyToolUITests */,
 				E28A73F82122D6AE00BD8BB8 /* Products */,
+				DD747F5E43B3A048EBD83450 /* Pods */,
+				21CF2BBE562351842D184E33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +136,13 @@
 		E28A73F92122D6AE00BD8BB8 /* MyTool */ = {
 			isa = PBXGroup;
 			children = (
+				E28A742F2122D96000BD8BB8 /* NetWorking */,
+				E28A74302122D98A00BD8BB8 /* UserDefaults */,
 				E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */,
 				E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */,
-				E28A73FD2122D6AE00BD8BB8 /* ViewController.h */,
-				E28A73FE2122D6AE00BD8BB8 /* ViewController.m */,
+				E28A744A2124143D00BD8BB8 /* PrefixHeader.pch */,
+				E28A742C2122D85200BD8BB8 /* MainViewController.h */,
+				E28A742D2122D85200BD8BB8 /* MainViewController.m */,
 				E28A74002122D6AE00BD8BB8 /* Main.storyboard */,
 				E28A74032122D6AF00BD8BB8 /* Assets.xcassets */,
 				E28A74052122D6AF00BD8BB8 /* LaunchScreen.storyboard */,
@@ -132,6 +170,27 @@
 			path = MyToolUITests;
 			sourceTree = "<group>";
 		};
+		E28A742F2122D96000BD8BB8 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				E28A744421240C2100BD8BB8 /* DBNetApi.h */,
+				E28A744721240DD800BD8BB8 /* BaseNetworking.h */,
+				E28A744821240DD800BD8BB8 /* BaseNetworking.m */,
+				E28A744E21241BC300BD8BB8 /* NetWorkManager.h */,
+				E28A744F21241BC300BD8BB8 /* NetWorkManager.m */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		E28A74302122D98A00BD8BB8 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				E28A74312122D9F900BD8BB8 /* DBSaveManage.h */,
+				E28A74322122D9F900BD8BB8 /* DBSaveManage.m */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E28A74232122D6B000BD8BB8 /* Build configuration list for PBXNativeTarget "MyTool" */;
 			buildPhases = (
+				9DEAA6BBB1FFCF11A5960B0B /* [CP] Check Pods Manifest.lock */,
 				E28A73F32122D6AE00BD8BB8 /* Sources */,
 				E28A73F42122D6AE00BD8BB8 /* Frameworks */,
 				E28A73F52122D6AE00BD8BB8 /* Resources */,
@@ -257,14 +317,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9DEAA6BBB1FFCF11A5960B0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E28A73F32122D6AE00BD8BB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E28A73FF2122D6AE00BD8BB8 /* ViewController.m in Sources */,
+				E28A745021241BC300BD8BB8 /* NetWorkManager.m in Sources */,
+				E28A744921240DD800BD8BB8 /* BaseNetworking.m in Sources */,
 				E28A740A2122D6AF00BD8BB8 /* main.m in Sources */,
+				E28A742E2122D85200BD8BB8 /* MainViewController.m in Sources */,
 				E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */,
+				E28A74332122D9F900BD8BB8 /* DBSaveManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,13 +515,38 @@
 		};
 		E28A74242122D6B000BD8BB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HXC4DQC3M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jarvan-zhang/Desktop/MyTool/MyTool/PrefixHeader.pch";
 				INFOPLIST_FILE = MyTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTool/YZLog",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvan.MyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,13 +556,38 @@
 		};
 		E28A74252122D6B000BD8BB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA18048DCCCD58538791F846 /* Pods-MyTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HXC4DQC3M;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jarvan-zhang/Desktop/MyTool/MyTool/PrefixHeader.pch";
 				INFOPLIST_FILE = MyTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyTool/YZLog",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJExtension\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvan.MyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
