@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTool/Pods-MyTool.debug.xcconfig"; sourceTree = "<group>"; };
 		BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2078153212521CB0020E6B7 /* NotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
 		E28A73F72122D6AE00BD8BB8 /* MyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */,
 				E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */,
 				E28A744A2124143D00BD8BB8 /* PrefixHeader.pch */,
+				E2078153212521CB0020E6B7 /* NotificationName.h */,
 				E28A742C2122D85200BD8BB8 /* MainViewController.h */,
 				E28A742D2122D85200BD8BB8 /* MainViewController.m */,
 				E28A74002122D6AE00BD8BB8 /* Main.storyboard */,

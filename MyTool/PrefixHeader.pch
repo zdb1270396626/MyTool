@@ -14,7 +14,25 @@
 #import <MJExtension.h>
 #import <AFNetworking.h>
 
+//项目的文件引用
 #import "AppDelegate.h"
+#import "NotificationName.h"
+
+
+
+// .屏幕尺寸
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height-812)?NO:YES)
+#define DB_StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height//状态栏高度
+#define DB_NavBarHeight 44.0
+#define DB_TabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49) //底部tabbar高度
+#define DB_TopHeight (ML_StatusBarHeight + ML_NavBarHeight) //整个导航栏高度
+
+//rgb颜色
+#define RGBColor(R,G,B)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:1.0]
+#define RGBAColor(R,G,B,A)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:A]
 
 
 #endif /* PrefixHeader_pch */
