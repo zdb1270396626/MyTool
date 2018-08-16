@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9554767271F8D418865372A9 /* libPods-MyTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */; };
+		E20781572125267A0020E6B7 /* NSStringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E20781562125267A0020E6B7 /* NSStringSize.m */; };
+		E2078167212528CE0020E6B7 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E2078166212528CE0020E6B7 /* Tools.m */; };
+		E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E207816F21252ABA0020E6B7 /* UIImage+Color.m */; };
+		E207817321252ABA0020E6B7 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E207817021252ABA0020E6B7 /* UIImage+Common.m */; };
+		E207817621252B1C0020E6B7 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E207817521252B1C0020E6B7 /* UIColor+UIColor_Hex.m */; };
 		E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */; };
 		E28A74022122D6AE00BD8BB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A74002122D6AE00BD8BB8 /* Main.storyboard */; };
 		E28A74042122D6AF00BD8BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28A74032122D6AF00BD8BB8 /* Assets.xcassets */; };
@@ -42,6 +47,16 @@
 		2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTool/Pods-MyTool.debug.xcconfig"; sourceTree = "<group>"; };
 		BB4EF5AA88A1D58F22ED2EF6 /* libPods-MyTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2078153212521CB0020E6B7 /* NotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
+		E20781552125267A0020E6B7 /* NSStringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringSize.h; sourceTree = "<group>"; };
+		E20781562125267A0020E6B7 /* NSStringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringSize.m; sourceTree = "<group>"; };
+		E2078165212528CE0020E6B7 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		E2078166212528CE0020E6B7 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		E207816B21252ABA0020E6B7 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		E207816C21252ABA0020E6B7 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		E207816F21252ABA0020E6B7 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		E207817021252ABA0020E6B7 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		E207817421252B1C0020E6B7 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		E207817521252B1C0020E6B7 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
 		E28A73F72122D6AE00BD8BB8 /* MyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,6 +127,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E20781582125285B0020E6B7 /* ToolObject */ = {
+			isa = PBXGroup;
+			children = (
+				E20781552125267A0020E6B7 /* NSStringSize.h */,
+				E20781562125267A0020E6B7 /* NSStringSize.m */,
+				E207817421252B1C0020E6B7 /* UIColor+UIColor_Hex.h */,
+				E207817521252B1C0020E6B7 /* UIColor+UIColor_Hex.m */,
+				E207816B21252ABA0020E6B7 /* UIImage+Color.h */,
+				E207816F21252ABA0020E6B7 /* UIImage+Color.m */,
+				E207816C21252ABA0020E6B7 /* UIImage+Common.h */,
+				E207817021252ABA0020E6B7 /* UIImage+Common.m */,
+			);
+			path = ToolObject;
+			sourceTree = "<group>";
+		};
 		E28A73EE2122D6AE00BD8BB8 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +169,9 @@
 			children = (
 				E28A742F2122D96000BD8BB8 /* NetWorking */,
 				E28A74302122D98A00BD8BB8 /* UserDefaults */,
+				E20781582125285B0020E6B7 /* ToolObject */,
+				E2078165212528CE0020E6B7 /* Tools.h */,
+				E2078166212528CE0020E6B7 /* Tools.m */,
 				E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */,
 				E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */,
 				E28A744A2124143D00BD8BB8 /* PrefixHeader.pch */,
@@ -346,10 +379,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E28A745021241BC300BD8BB8 /* NetWorkManager.m in Sources */,
+				E20781572125267A0020E6B7 /* NSStringSize.m in Sources */,
 				E28A744921240DD800BD8BB8 /* BaseNetworking.m in Sources */,
 				E28A740A2122D6AF00BD8BB8 /* main.m in Sources */,
 				E28A742E2122D85200BD8BB8 /* MainViewController.m in Sources */,
+				E207817621252B1C0020E6B7 /* UIColor+UIColor_Hex.m in Sources */,
+				E2078167212528CE0020E6B7 /* Tools.m in Sources */,
+				E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */,
 				E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */,
+				E207817321252ABA0020E6B7 /* UIImage+Common.m in Sources */,
 				E28A74332122D9F900BD8BB8 /* DBSaveManage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

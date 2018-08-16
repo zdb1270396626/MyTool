@@ -14,6 +14,10 @@
 #import <MJExtension.h>
 #import <AFNetworking.h>
 
+//分类
+#import "UIColor+UIColor_Hex.h"
+#import "Tools.h"
+
 //项目的文件引用
 #import "AppDelegate.h"
 #import "NotificationName.h"

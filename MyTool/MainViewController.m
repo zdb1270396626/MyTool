@@ -35,7 +35,9 @@
     [[NetWorkManager sharedNetWorkManager] getTestDataSuccess:^(id resultDic) {
      
 //        NSLog(@"------%@",resultDic);
+       
         [self->_button setTitle:@"success" forState:UIControlStateNormal];
+//        [Tools LogNetData:resultDic];
     } failure:^(NSError *error) {
         [self->_button setTitle:@"error" forState:UIControlStateNormal];
         NSLog(@"------error%@",error);

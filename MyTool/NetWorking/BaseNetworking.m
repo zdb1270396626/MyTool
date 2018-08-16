@@ -63,11 +63,11 @@
         }
         
         if (success) {
-            //控制台转码，输出中文
-            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
-            // NSData转为NSString
-            NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-            NSLog(@"jsonStr = %@", jsonStr);
+//            //控制台转码，输出中文
+//            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+//            // NSData转为NSString
+//            NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+//            NSLog(@"jsonStr = %@", jsonStr);
             
             success(responseObject);
         }
