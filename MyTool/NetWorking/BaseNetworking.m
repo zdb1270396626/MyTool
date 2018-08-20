@@ -8,6 +8,7 @@
 
 #import "BaseNetworking.h"
 #import "AppDelegate.h"
+#import "DBAFHTTPSessionManager.h"
 
 
 
@@ -42,9 +43,10 @@
 //    security.allowInvalidCertificates = YES;
 //    manager.securityPolicy = security;
     
-    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    AFHTTPSessionManager *manager = [app sharedHTTPSession];
+//    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    DBAFHTTPSessionManager *manager = [DBAFHTTPSessionManager sharedHTTPSession];
 
+    NSLog(@"---------_%@----%@",urlString,parameters);
     [manager GET:urlString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        NSLog(@"\n\n接口地址:\n%@", [NSString stringWithFormat:@"%@%@",[BaseUrl sharedBaseUrl].url,urlString]);
@@ -53,7 +55,7 @@
         
         if ([responseObject[@"resultCode"] integerValue] == 1004) {
 //            [SVProgressHUD showErrorWithStatus:@"您的登录信息已过期，请重新登录"];
-            [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(@"phoneLoginViewController") alloc] init];
+//            [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(@"phoneLoginViewController") alloc] init];
         }
         if ([responseObject[@"resultCode"] integerValue] == 2001
             ||
@@ -98,8 +100,9 @@
      success:(successBlock)success
      failure:(failureBlock)failure {
     
-    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    AFHTTPSessionManager *manager = [app sharedHTTPSession];
+//    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    AFHTTPSessionManager *manager = [app sharedHTTPSession];
+    DBAFHTTPSessionManager *manager = [DBAFHTTPSessionManager sharedHTTPSession];
 //    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 //    manager.requestSerializer = [AFJSONRequestSerializer serializer];
 //    [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
@@ -156,8 +159,9 @@
        success:(successBlock)success
        failure:(failureBlock)failure {
     
-    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    AFHTTPSessionManager *manager = [app sharedHTTPSession];
+    DBAFHTTPSessionManager *manager = [DBAFHTTPSessionManager sharedHTTPSession];
+//    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    AFHTTPSessionManager *manager = [app sharedHTTPSession];
 //    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
 //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
     

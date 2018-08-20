@@ -24,6 +24,7 @@
 		E28A74332122D9F900BD8BB8 /* DBSaveManage.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A74322122D9F900BD8BB8 /* DBSaveManage.m */; };
 		E28A744921240DD800BD8BB8 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A744821240DD800BD8BB8 /* BaseNetworking.m */; };
 		E28A745021241BC300BD8BB8 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A744F21241BC300BD8BB8 /* NetWorkManager.m */; };
+		E290EAF1212AA0D7000A7815 /* DBAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E290EAF0212AA0D7000A7815 /* DBAFHTTPSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		E28A744A2124143D00BD8BB8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		E28A744E21241BC300BD8BB8 /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		E28A744F21241BC300BD8BB8 /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		E290EAEF212AA0D7000A7815 /* DBAFHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		E290EAF0212AA0D7000A7815 /* DBAFHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAFHTTPSessionManager.m; sourceTree = "<group>"; };
 		FA18048DCCCD58538791F846 /* Pods-MyTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTool/Pods-MyTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				E28A744421240C2100BD8BB8 /* DBNetApi.h */,
+				E290EAEF212AA0D7000A7815 /* DBAFHTTPSessionManager.h */,
+				E290EAF0212AA0D7000A7815 /* DBAFHTTPSessionManager.m */,
 				E28A744721240DD800BD8BB8 /* BaseNetworking.h */,
 				E28A744821240DD800BD8BB8 /* BaseNetworking.m */,
 				E28A744E21241BC300BD8BB8 /* NetWorkManager.h */,
@@ -385,6 +390,7 @@
 				E28A742E2122D85200BD8BB8 /* MainViewController.m in Sources */,
 				E207817621252B1C0020E6B7 /* UIColor+UIColor_Hex.m in Sources */,
 				E2078167212528CE0020E6B7 /* Tools.m in Sources */,
+				E290EAF1212AA0D7000A7815 /* DBAFHTTPSessionManager.m in Sources */,
 				E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */,
 				E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */,
 				E207817321252ABA0020E6B7 /* UIImage+Common.m in Sources */,

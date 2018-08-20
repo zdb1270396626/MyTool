@@ -51,24 +51,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-//AFNetWorking leaks
-static AFHTTPSessionManager *manager ;
-- (AFHTTPSessionManager *)sharedHTTPSession {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        manager = [AFHTTPSessionManager manager];
-        manager.requestSerializer.timeoutInterval = 10;
-        
-        manager.requestSerializer=[AFJSONRequestSerializer serializer];
-        [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
-        [manager.responseSerializer.acceptableContentTypes setByAddingObjectsFromSet:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil]];
-        AFSecurityPolicy *security = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-        [security setValidatesDomainName:NO];
-        security.allowInvalidCertificates = YES;
-        manager.securityPolicy = security;
-        
-    });
-    return manager;
-}
+
 
 @end
