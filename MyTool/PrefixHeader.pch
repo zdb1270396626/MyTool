@@ -38,5 +38,5 @@
 #define RGBColor(R,G,B)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:1.0]
 #define RGBAColor(R,G,B,A)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:A]
 
-
+#define weakSelf __weak typeof(self) weakSelf = self
 #endif /* PrefixHeader_pch */

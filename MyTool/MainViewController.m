@@ -29,13 +29,13 @@
     [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
     
+    
 }
 - (void)click:(UIButton *)button {
-    
+   
     [[NetWorkManager sharedNetWorkManager] getTestDataSuccess:^(id resultDic) {
      
 //        NSLog(@"------%@",resultDic);
-       
         [self->_button setTitle:@"success" forState:UIControlStateNormal];
 //        [Tools LogNetData:resultDic];
     } failure:^(NSError *error) {

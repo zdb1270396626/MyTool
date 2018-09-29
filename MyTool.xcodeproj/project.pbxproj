@@ -13,6 +13,8 @@
 		E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E207816F21252ABA0020E6B7 /* UIImage+Color.m */; };
 		E207817321252ABA0020E6B7 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = E207817021252ABA0020E6B7 /* UIImage+Common.m */; };
 		E207817621252B1C0020E6B7 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = E207817521252B1C0020E6B7 /* UIColor+UIColor_Hex.m */; };
+		E25EED42215F039A002C3F6D /* NSArray+decription.m in Sources */ = {isa = PBXBuildFile; fileRef = E25EED41215F039A002C3F6D /* NSArray+decription.m */; };
+		E25EED45215F039F002C3F6D /* NSDictionary+decription.m in Sources */ = {isa = PBXBuildFile; fileRef = E25EED44215F039F002C3F6D /* NSDictionary+decription.m */; };
 		E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */; };
 		E28A74022122D6AE00BD8BB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28A74002122D6AE00BD8BB8 /* Main.storyboard */; };
 		E28A74042122D6AF00BD8BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28A74032122D6AF00BD8BB8 /* Assets.xcassets */; };
@@ -58,6 +60,10 @@
 		E207817021252ABA0020E6B7 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
 		E207817421252B1C0020E6B7 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
 		E207817521252B1C0020E6B7 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		E25EED40215F039A002C3F6D /* NSArray+decription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+decription.h"; sourceTree = "<group>"; };
+		E25EED41215F039A002C3F6D /* NSArray+decription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+decription.m"; sourceTree = "<group>"; };
+		E25EED43215F039E002C3F6D /* NSDictionary+decription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+decription.h"; sourceTree = "<group>"; };
+		E25EED44215F039F002C3F6D /* NSDictionary+decription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+decription.m"; sourceTree = "<group>"; };
 		E28A73F72122D6AE00BD8BB8 /* MyTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28A73FA2122D6AE00BD8BB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E28A73FB2122D6AE00BD8BB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +151,17 @@
 			path = ToolObject;
 			sourceTree = "<group>";
 		};
+		E25EED3F215F036C002C3F6D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E25EED43215F039E002C3F6D /* NSDictionary+decription.h */,
+				E25EED44215F039F002C3F6D /* NSDictionary+decription.m */,
+				E25EED40215F039A002C3F6D /* NSArray+decription.h */,
+				E25EED41215F039A002C3F6D /* NSArray+decription.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		E28A73EE2122D6AE00BD8BB8 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +187,7 @@
 		E28A73F92122D6AE00BD8BB8 /* MyTool */ = {
 			isa = PBXGroup;
 			children = (
+				E25EED3F215F036C002C3F6D /* Category */,
 				E28A742F2122D96000BD8BB8 /* NetWorking */,
 				E28A74302122D98A00BD8BB8 /* UserDefaults */,
 				E20781582125285B0020E6B7 /* ToolObject */,
@@ -389,8 +407,10 @@
 				E28A740A2122D6AF00BD8BB8 /* main.m in Sources */,
 				E28A742E2122D85200BD8BB8 /* MainViewController.m in Sources */,
 				E207817621252B1C0020E6B7 /* UIColor+UIColor_Hex.m in Sources */,
+				E25EED42215F039A002C3F6D /* NSArray+decription.m in Sources */,
 				E2078167212528CE0020E6B7 /* Tools.m in Sources */,
 				E290EAF1212AA0D7000A7815 /* DBAFHTTPSessionManager.m in Sources */,
+				E25EED45215F039F002C3F6D /* NSDictionary+decription.m in Sources */,
 				E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */,
 				E28A73FC2122D6AE00BD8BB8 /* AppDelegate.m in Sources */,
 				E207817321252ABA0020E6B7 /* UIImage+Common.m in Sources */,
