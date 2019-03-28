@@ -28,22 +28,6 @@
     success:(successBlock)success
     failure:(failureBlock)failure
 {
-    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//
-////    NSLog(@"接口地址:%@",[NSString stringWithFormat:@"%@%@",[BaseUrl sharedBaseUrl].url,urlString]);
-//
-//    manager = [AFHTTPSessionManager manager];
-//    manager.requestSerializer.timeoutInterval = 30;
-//
-//    manager.requestSerializer=[AFJSONRequestSerializer serializer];
-//    [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
-//    AFSecurityPolicy *security = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
-//    [security setValidatesDomainName:NO];
-//    security.allowInvalidCertificates = YES;
-//    manager.securityPolicy = security;
-    
-//    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     DBAFHTTPSessionManager *manager = [DBAFHTTPSessionManager sharedHTTPSession];
 
     NSLog(@"---------_%@----%@",urlString,parameters);

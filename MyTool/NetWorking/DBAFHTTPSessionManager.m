@@ -16,7 +16,7 @@ static DBAFHTTPSessionManager *manager ;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [DBAFHTTPSessionManager manager];
-        manager.requestSerializer.timeoutInterval = 20;
+        manager.requestSerializer.timeoutInterval = 30;
         
         manager.requestSerializer=[AFJSONRequestSerializer serializer];
         [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
