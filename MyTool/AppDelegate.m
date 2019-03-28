@@ -8,14 +8,14 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-//1
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+//123
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     MainViewController *mainVC = [[MainViewController alloc]init];

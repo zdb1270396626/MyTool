@@ -584,10 +584,11 @@
 			baseConfigurationReference = 2A9651593DD014A6823308B7 /* Pods-MyTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9B832T93C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/jarvan-zhang/Desktop/MyTool/MyTool/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/hjf1234/Desktop/MyTool/MyTool/PrefixHeader.pch;
 				INFOPLIST_FILE = MyTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,6 +617,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvan.MyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -625,10 +627,11 @@
 			baseConfigurationReference = FA18048DCCCD58538791F846 /* Pods-MyTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9B832T93C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/jarvan-zhang/Desktop/MyTool/MyTool/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/hjf1234/Desktop/MyTool/MyTool/PrefixHeader.pch;
 				INFOPLIST_FILE = MyTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,6 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jarvan.MyTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
