@@ -18,7 +18,7 @@
     button.layer.cornerRadius = frame.size.height*0.5;
     button.layer.masksToBounds = YES;
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setBackgroundColor:THEMECOLOR forState:UIControlStateNormal];
+//    [button setBackgroundColor:THEMECOLOR forState:UIControlStateNormal];
     return button;
 }
 
@@ -28,7 +28,7 @@
     UIButton *button = [[UIButton alloc] initWithFrame:frame];
     button.titleLabel.font = [UIFont systemFontOfSize:16];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button setBackgroundColor:THEMECOLOR forState:UIControlStateNormal];
+//    [button setBackgroundColor:THEMECOLOR forState:UIControlStateNormal];
     return button;
 }
 

@@ -20,8 +20,8 @@
     [rightButn setImage:[UIImage imageWithOriginalImageName:highImage] forState:UIControlStateHighlighted];
     [rightButn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [rightButn sizeToFit];
-    rightButn.yq_width = 30;
-    rightButn.yq_height = 30;
+//    rightButn.yq_width = 30;
+//    rightButn.yq_height = 30;
     return [[self alloc] initWithCustomView:rightButn];
 }
 
