@@ -35,7 +35,6 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        NSLog(@"\n\n接口地址:\n%@", [NSString stringWithFormat:@"%@%@",[BaseUrl sharedBaseUrl].url,urlString]);
         NSLog(@"\n\n参数:\n%@", [parameters mj_JSONString]);
-//        NSLog(@"\n\nGET基类请求返回:\n%@", responseObject);
         
         if ([responseObject[@"resultCode"] integerValue] == 1004) {
 //            [SVProgressHUD showErrorWithStatus:@"您的登录信息已过期，请重新登录"];
@@ -84,14 +83,7 @@
      success:(successBlock)success
      failure:(failureBlock)failure {
     
-//    AppDelegate *app = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    AFHTTPSessionManager *manager = [app sharedHTTPSession];
     DBAFHTTPSessionManager *manager = [DBAFHTTPSessionManager sharedHTTPSession];
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-//    [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
-//
-//    [manager.responseSerializer.acceptableContentTypes setByAddingObjectsFromSet:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil]];
     NSString *url = [NSString stringWithFormat:@"%@",urlString];
     
     NSLog(@"\n\n请求参数parameter\n:%@\n\n", [parameters mj_JSONString]);

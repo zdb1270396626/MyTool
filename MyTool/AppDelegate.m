@@ -22,6 +22,30 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:mainVC];
     self.window.rootViewController = nav;
     
+    //af网络监听
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    [manager startMonitoring];
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+        
+                case AFNetworkReachabilityStatusNotReachable://没有网络
+                        NSLog(@"没有网络");
+                        break;
+                case AFNetworkReachabilityStatusUnknown://未知网络
+                        NSLog(@"未知网络");
+                        break;
+                case AFNetworkReachabilityStatusReachableViaWiFi://wifi
+                        NSLog(@"WiFi");
+                        break;
+                case AFNetworkReachabilityStatusReachableViaWWAN://手机流量
+                        NSLog(@"手机流量f");
+                        break;
+                default:
+                        break;
+                }
+    }];
+    
+    
     return YES;
 }
 
