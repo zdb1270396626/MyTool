@@ -26,6 +26,7 @@
 		C39D90AD224C768A00641E5C /* UILabel+YBAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C39D909A224C768900641E5C /* UILabel+YBAttributeTextTapAction.m */; };
 		C39D90AE224C768A00641E5C /* UIButton+FillColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C39D909E224C768A00641E5C /* UIButton+FillColor.m */; };
 		C39D90AF224C768A00641E5C /* UIButton+YQButtonManger.m in Sources */ = {isa = PBXBuildFile; fileRef = C39D909F224C768A00641E5C /* UIButton+YQButtonManger.m */; };
+		C39D90B2224DA59100641E5C /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = C39D90B0224DA59100641E5C /* NSString+StringSize.m */; };
 		E20781572125267A0020E6B7 /* NSStringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = E20781562125267A0020E6B7 /* NSStringSize.m */; };
 		E2078167212528CE0020E6B7 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = E2078166212528CE0020E6B7 /* Tools.m */; };
 		E207817221252ABA0020E6B7 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = E207816F21252ABA0020E6B7 /* UIImage+Color.m */; };
@@ -100,6 +101,8 @@
 		C39D909D224C768A00641E5C /* UIButton+FillColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FillColor.h"; sourceTree = "<group>"; };
 		C39D909E224C768A00641E5C /* UIButton+FillColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FillColor.m"; sourceTree = "<group>"; };
 		C39D909F224C768A00641E5C /* UIButton+YQButtonManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YQButtonManger.m"; sourceTree = "<group>"; };
+		C39D90B0224DA59100641E5C /* NSString+StringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSize.m"; sourceTree = "<group>"; };
+		C39D90B1224DA59100641E5C /* NSString+StringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
 		E2078153212521CB0020E6B7 /* NotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
 		E20781552125267A0020E6B7 /* NSStringSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSStringSize.h; sourceTree = "<group>"; };
 		E20781562125267A0020E6B7 /* NSStringSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringSize.m; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				C39D909F224C768A00641E5C /* UIButton+YQButtonManger.m */,
 				C39D9097224C768900641E5C /* UIImage+colorImage.h */,
 				C39D908F224C768800641E5C /* UIImage+colorImage.m */,
+				C39D90B1224DA59100641E5C /* NSString+StringSize.h */,
+				C39D90B0224DA59100641E5C /* NSString+StringSize.m */,
 				C39D908B224C768800641E5C /* UIImage+WLCompress.h */,
 				C39D9092224C768800641E5C /* UIImage+WLCompress.m */,
 				C39D909C224C768900641E5C /* UIImage+YQWatermark.h */,
@@ -519,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39D90A6224C768A00641E5C /* UIBarButtonItem+YQExtension.m in Sources */,
+				C39D90B2224DA59100641E5C /* NSString+StringSize.m in Sources */,
 				C39D90A2224C768A00641E5C /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C39D90A3224C768A00641E5C /* NSArray+decription.m in Sources */,
 				C39D90AF224C768A00641E5C /* UIButton+YQButtonManger.m in Sources */,

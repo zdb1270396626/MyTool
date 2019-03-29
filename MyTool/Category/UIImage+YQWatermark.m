@@ -75,7 +75,7 @@
 {
     //text = [text stringByAppendingString:text];
     
-    CGFloat texth = APP_WIDTH/10*1.5;
+    CGFloat texth = WIDTH/10*1.5;
     
     //文字的属性
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
@@ -103,12 +103,12 @@
 
 + (UIImage *)textStr1:(NSString *)text
 {
-    CGFloat texth = APP_WIDTH/10*1;
+    CGFloat texth = WIDTH/10*1;
     
     //文字的属性
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
     style.alignment = NSTextAlignmentLeft;
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:texth-10],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:[UIColor whiteColor],NSBackgroundColorAttributeName:RGBA(0, 0, 0, 0.7)};
+    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:texth-10],NSParagraphStyleAttributeName:style,NSForegroundColorAttributeName:[UIColor whiteColor],NSBackgroundColorAttributeName:RGBAColor(0, 0, 0, 0.7)};
     /*计算宽度时要确定高度*/
     CGRect rect = [text boundingRectWithSize:CGSizeMake(0, texth) options:NSStringDrawingUsesLineFragmentOrigin |
                    NSStringDrawingUsesFontLeading attributes:dic context:nil];

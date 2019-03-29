@@ -12,7 +12,7 @@
 
 + (UIImage *)imageWithColor:(UIColor *)color
 {
-    CGSize size = CGSizeMake(APP_WIDTH, 64);
+    CGSize size = CGSizeMake(WIDTH, 64);
     UIGraphicsBeginImageContext(size);
     
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, size.width, size.height)];
