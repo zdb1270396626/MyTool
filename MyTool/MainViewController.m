@@ -29,9 +29,7 @@
     [_button addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_button];
     
-<<<<<<< HEAD
-   
-=======
+
     UIButton *alertButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [alertButton setTitle:@"Alert" forState:UIControlStateNormal];
     alertButton.backgroundColor = [UIColor lightGrayColor];
@@ -44,7 +42,6 @@
     }];
     
     
->>>>>>> f95fad955c2546447d88d53e7b2aa74d7784c434
 }
 
 - (void)click:(UIButton *)button {
