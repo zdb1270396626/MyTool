@@ -36,6 +36,7 @@
                         break;
                 case AFNetworkReachabilityStatusReachableViaWiFi://wifi
                         NSLog(@"WiFi");
+         
                         break;
                 case AFNetworkReachabilityStatusReachableViaWWAN://手机流量
                         NSLog(@"手机流量f");

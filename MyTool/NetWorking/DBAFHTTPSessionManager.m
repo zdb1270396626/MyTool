@@ -18,7 +18,8 @@ static DBAFHTTPSessionManager *manager ;
         manager = [DBAFHTTPSessionManager manager];
         manager.requestSerializer.timeoutInterval = 30;
         
-        manager.requestSerializer=[AFJSONRequestSerializer serializer];
+        manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//        manager.requestSerializer=[AFJSONRequestSerializer serializer];
         [manager.requestSerializer setValue:@"application/json"forHTTPHeaderField:@"Accept"];
         [manager.responseSerializer.acceptableContentTypes setByAddingObjectsFromSet:[NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil]];
         AFSecurityPolicy *security = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];

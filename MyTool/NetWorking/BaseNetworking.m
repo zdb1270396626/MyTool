@@ -36,16 +36,16 @@
 //        NSLog(@"\n\n接口地址:\n%@", [NSString stringWithFormat:@"%@%@",[BaseUrl sharedBaseUrl].url,urlString]);
         NSLog(@"\n\n参数:\n%@", [parameters mj_JSONString]);
         
-        if ([responseObject[@"resultCode"] integerValue] == 1004) {
-//            [SVProgressHUD showErrorWithStatus:@"您的登录信息已过期，请重新登录"];
-//            [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(@"phoneLoginViewController") alloc] init];
-        }
-        if ([responseObject[@"resultCode"] integerValue] == 2001
-            ||
-            [responseObject[@"code"] integerValue] == 2001)
-        {
-//            [SVProgressHUD showErrorWithStatus:responseObject[@"resultMsg"]];
-        }
+//        if ([responseObject[@"resultCode"] integerValue] == 1004) {
+////            [SVProgressHUD showErrorWithStatus:@"您的登录信息已过期，请重新登录"];
+////            [UIApplication sharedApplication].keyWindow.rootViewController = [[NSClassFromString(@"phoneLoginViewController") alloc] init];
+//        }
+//        if ([responseObject[@"resultCode"] integerValue] == 2001
+//            ||
+//            [responseObject[@"code"] integerValue] == 2001)
+//        {
+////            [SVProgressHUD showErrorWithStatus:responseObject[@"resultMsg"]];
+//        }
         
         if (success) {
 //            //控制台转码，输出中文
@@ -92,11 +92,13 @@
 //        NSLog(@"\n\n接口地址:\n%@", [NSString stringWithFormat:@"%@%@",[BaseUrl sharedBaseUrl].url,urlString]);
         NSLog(@"\n\n参数:\n%@", [parameters mj_JSONString]);
         NSLog(@"\n\n\nPOST基类网络返回:\n%@\n",responseObject);
+        NSString *result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",result);
         if (success) {
             
-            NSString *errMsg = responseObject[@"err_msg"];
-            errMsg = [errMsg stringByRemovingPercentEncoding];
-            if (errMsg.length > 1) NSLog(@"\n=====================================================\n 网络返回信息err_msg:%@\n", errMsg);
+//            NSString *errMsg = responseObject[@"err_msg"];
+//            errMsg = [errMsg stringByRemovingPercentEncoding];
+//            if (errMsg.length > 1) NSLog(@"\n=====================================================\n 网络返回信息err_msg:%@\n", errMsg);
             success(responseObject);
         } else {
             
